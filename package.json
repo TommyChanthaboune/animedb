@@ -9,6 +9,7 @@
     "test": "turbo test"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.22.5",
     "prettier": "^2.7.1",
     "turbo": "latest"
   },

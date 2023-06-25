@@ -1,0 +1,14 @@
+.detailsPage {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .detailsPage form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .detailsPage fieldset {
+    width: 50%;
+  } 
+}

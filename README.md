@@ -1,37 +1,73 @@
-# Turborepo kitchen sink starter
+## Getting Started
 
-This is an official starter Turborepo with multiple meta-frameworks all working in harmony and sharing packages.
+* Node Version: 18.16.1 LTS
+* NPM Version: 9.5.1
 
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e kitchen-sink
+#### Install dependencies
+```
+$ npm i
 ```
 
-## What's inside?
+#### Run development environment
+```
+$ npm run dev
+```
+Frontend runs on localhost:3000
+Backend runs on localhost:3001
 
-This Turborepo includes the following packages and apps:
 
-### Apps and Packages
+## Notes
 
-- `api`: an [Express](https://expressjs.com/) server
-- `storefront`: a [Next.js](https://nextjs.org/) app
-- `admin`: a [Vite](https://vitejs.dev/) single page app
-- `blog`: a [Remix](https://remix.run/) blog
-- `logger`: isomorphic logger (a small wrapper around console.log)
-- `ui`: a dummy React UI library (which contains a single `<CounterButton>` component)
-- `scripts`: Jest and ESLint configurations
-- `tsconfig`: tsconfig.json;s used throughout the monorepo
+### Vite + SWC instead of CRA
 
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/).
+I will be using Vite + SWC for tooling and compilation instead of CRA. CRA is obsolete and slow whereas Vite and SWC are more performant in comparison. 
 
-### Utilities
+### TurboRepo
+I wanted to demonstrate frontend infrastructure by implementing the frontend and mock api as two seperate packages in a monorepo using Turborepo. This was valuable experience working with a frontend repo at scale in my past experience.
 
-This Turborepo has some additional tools already setup for you:
+#### Folder Structure
+```
+├── apps/
+│ ├── api/ 
+│ ├── mediaApp/
+│ │ ├── src/
+│ │ │ ├── components/
+│ │ │ ├── context/
+│ │ │ ├── services/
+│ │ │ ├── stores/
+├── packages/
+│ ├──eslint-config-custom/
+│ ├──eslint-config-custom-server/
+│ ├──jest-presets/
+│ ├──tsconfig/
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Jest](https://jestjs.io) test runner for all things JavaScript
-- [Prettier](https://prettier.io) for code formatting
+```
+
+### TODOs
+- [x] List all media content 
+- [x] Add new media content
+- [x] Edit Existing media content
+- [x] Delete media content
+- [x] Filter media content by Type
+- [x] Routing
+- [x] Responsive Design
+- [x] Basic Design
+- [x] Unit Tests
+#### Components to be implemented
+  - [x] MediaList
+  - [x] MediaForm
+  - [x] MediaItem
+  - [x] FilterBar
+
+#### Requirements
+- [x] Use React w/ Typescript for Component Development
+- [x] Apply OOP Principles to media content model
+- [x] Use MobX for state management
+- [x] Use RxJS to handle async operations, (API Calls)
+- [x] Clean, maintainable, and well maintable code
+#### Extra
+- [x] Configure TurboRepo
+- [x] Configure Vite + SWC
+- [ ] sqlite db
+- [ ] CRUD w/ prisma
+- [ ] Cypress E2E tests

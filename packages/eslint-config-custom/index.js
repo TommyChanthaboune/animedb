@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["next", "turbo", "prettier"],
+  extends: ["vite", "turbo", "prettier"],
   settings: {
     react: {
       version: "detect",
@@ -7,7 +7,7 @@ module.exports = {
   },
   parserOptions: {
     babelOptions: {
-      presets: [require.resolve("next/babel")],
+      presets: [require.resolve("vite/swc-preset")],
     },
   },
 };

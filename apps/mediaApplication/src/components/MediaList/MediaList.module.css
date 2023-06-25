@@ -1,0 +1,4 @@
+.mediaList {
+    display: flex;
+    flex-wrap: wrap;
+}

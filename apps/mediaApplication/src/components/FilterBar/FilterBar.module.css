@@ -1,0 +1,18 @@
+.filterBar {
+  margin-bottom: 1rem;
+}
+
+.filterBar fieldset {
+  display: flex;
+}
+
+.filterBar label.filterCheckbox {
+  display: flex;
+  align-items: center;
+  margin-left: .5rem;
+  text-transform: uppercase;
+}
+
+.filterBar label.filterCheckbox input{
+  margin-right: .25rem;
+}

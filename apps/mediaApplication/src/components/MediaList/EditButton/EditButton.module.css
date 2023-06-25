@@ -1,0 +1,12 @@
+.editButton {
+  position: absolute;
+  font-size: .5rem;
+  left: 1rem;
+  bottom: .5rem;
+  display: flex;
+  align-items: center; 
+}
+
+.editButton span {
+  margin-left: .25rem;
+}
