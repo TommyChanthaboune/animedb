@@ -23,13 +23,22 @@ Backend runs on localhost:3001
 I will be using Vite + SWC for tooling and compilation instead of CRA. CRA is obsolete and slow whereas Vite and SWC are more performant in comparison. 
 
 ### TurboRepo
-I wanted to demonstrate frontend infrastructure by implementing the frontend and mock api as two seperate packages in a monorepo using Turborepo. This was valuable experience working with a frontend repo at scale in my past experience.
+I wanted to demonstrate frontend infrastructure by implementing the frontend and mock api as two seperate packages in a monorepo using Turborepo. This was valuable experience working with a frontend repo at scale in my past experience. I also wanted to do more on the backend such as store the data in a sqlite db and use prisma for an ORM. The data was generated using ChatGPT.
+
+**Data and CRUD actions are performed in memory**
+
+### CSS Modules + PureCSS
+To keep things simple, lean, and to demonstrate some basic CSS - I decided to use CSS modules along with PureCSS for forms and buttons. The demonstration app should be fully responsive.
+
+### Testing with Vitest + RTL
+I used Vitest because it doesn't take a whole lot of configuration to get started and it has feature parity and the same API as jest.
+
 
 #### Folder Structure
 ```
 ├── apps/
 │ ├── api/ 
-│ ├── mediaApp/
+│ ├── mediaApp/ (Where you should start)
 │ │ ├── src/
 │ │ │ ├── components/
 │ │ │ ├── context/
