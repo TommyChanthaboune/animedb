@@ -47,7 +47,6 @@ I used Vitest because it doesn't take a whole lot of configuration to get starte
 ├── packages/
 │ ├──eslint-config-custom/
 │ ├──eslint-config-custom-server/
-│ ├──jest-presets/
 │ ├──tsconfig/
 
 ```
